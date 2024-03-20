@@ -205,7 +205,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li.btn-cta a span {
   background: #fff;
   padding: 4px 20px;
-~ position: absolute;
+position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -226,13 +226,24 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-transform: scale(1.2);
   transform: scale(1.2);
 }
-
+div#fh5co-event {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.groom {
+  text-align: center;
+}
+.bride {
+  text-align: center;
+}
 .fh5co-cover {
   height: 900px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
+  background-position: center;
 }
 .fh5co-cover .overlay {
   z-index: 0;
@@ -883,6 +894,7 @@ form label {
   position: relative;
   animation: pulse 1s ease infinite;
   padding: 10px;
+  /* margin-bottom: 10px; */
 }
 
 @keyframes pulse {
@@ -1799,7 +1811,28 @@ background-position: center;
   font-family: Sacramento, Arial, serif;
   font-size: 100px;
 }
+@media screen and (min-width: 375px) and (max-width: 478px) {
+  .simply-countdown > .simply-section {
+    display: inline-block;
+    width: 74px;
+    height: 86px;
+    background: rgba(241, 78, 149, 0.8);
+    margin: 0 4px;
+    border-radius: 50%;
+    position: relative;
+    animation: pulse 1s ease infinite;
+    padding: 10px;
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 20px;
+    /* amounts */
+  }
+}
 
 
 
-
+#fh5co-started {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
